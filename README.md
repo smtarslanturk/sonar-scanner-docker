@@ -25,7 +25,7 @@ sonar-scanner \
   -Dsonar.projectVersion=2.0 \
   -Dsonar.host.url=http://localhost:9000 \
   -Dsonar.java.binaries=. \
-  -Dsonar.login=<sonarservardanalinacakcredential>
+  -Dsonar.login=sonarservardanalinacakcredential
 
 JS ICIN
 sonar-scanner \
@@ -33,7 +33,7 @@ sonar-scanner \
   -Dsonar.sources=. \
   -Dsonar.projectVersion=1.0 \
   -Dsonar.host.url=http://localhost:9000 \
-  -Dsonar.login=<sonarservardanalinacakcredential>
+  -Dsonar.login=sonarservardanalinacakcredential
 
 Ilgili ayarlar yapildiktan sonra:
 1-Dockerfile build et: 
