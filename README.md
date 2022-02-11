@@ -8,6 +8,7 @@ Gereklilikler:
 - Sonar Scanner. 
 
 Sonar scanner kurulumuyla alakali asagidaki dokumani baz alabilirsiniz: 
+
 https://techexpert.tips/sonarqube/sonarqube-scanner-installation-ubuntu-linux/ 
 
 Sonar Scanner kurulum yapacaginiz bilgisayara Node JS kurulu olmasi gerekmektedir. 
