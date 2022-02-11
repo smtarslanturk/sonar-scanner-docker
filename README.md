@@ -37,10 +37,11 @@ sonar-scanner \
   -Dsonar.login=sonarservardanalinacakcredential
 
 Ilgili ayarlar yapildiktan sonra:
+
 1-Dockerfile build et: 
-docker build -t sonar-sacanner .
+**docker build -t sonar-sacanner .**
 
 2-Olusturulan docker image run et. 
-docker container run --rm --name sonar-source -it sonar-scanner
+**docker container run --rm --name sonar-source -it sonar-scanner**
 
 3-Sonuclara kurmus oldugunuz SonarServerdan gorebilirsiniz. 
