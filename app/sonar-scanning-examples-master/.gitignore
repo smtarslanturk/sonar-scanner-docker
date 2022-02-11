@@ -1,0 +1,24 @@
+# Gradle files
+.gradle/
+.classpath
+.project
+.settings/
+bin/
+
+# Build output
+build/
+.sonar
+target/
+bw-outputs/
+.scannerwork
+
+# IntelliJ
+
+.idea
+*.iml
+
+# mac
+.DS_Store
+
+# MSBuild
+obj/
