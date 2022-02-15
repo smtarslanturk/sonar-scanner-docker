@@ -21,22 +21,15 @@ __Configurations Required for Image to Work Correctly:__
 2- The run.sh file should be given appropriate commands. For example, the run.sh contents that can run JAVA and JS are as follows.
 
 __Sonar-Scanner run.sh example for JAVA project__
-sonar-scanner \ 
--Dsonar.projectKey=container-java-project \
--Dsonar.projectVersion=2.0 \
--Dsonar.host.url=http://localhost:9000 \
--Dsonar.java.binaries=. \
+sonar-scanner -Dsonar.projectKey=container-java-project -Dsonar.projectVersion=2.0 -Dsonar.host.url=http://localhost:9000 -Dsonar.java.binaries=. 
 -Dsonar.login=sonarservardanalinacakcredential
 
 __Sonar-Scanner run.sh example for JAVA project__
-sonar-scanner \ 
--Dsonar.projectKey=container-nj-project \
--Dsonar.sources=. \
--Dsonar.projectVersion=1.0 \
--Dsonar.host.url=http://localhost:9000 \
+sonar-scanner -Dsonar.projectKey=container-nj-project -Dsonar.sources=. -Dsonar.projectVersion=1.0 -Dsonar.host.url=http://localhost:9000 
 -Dsonar.login=sonarservardanalinacakcredential
 
 __After the relevant settings are made:__
+
 1-Build Dockerfile:
 __docker build -t sonar-sacanner .__
 
