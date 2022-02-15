@@ -16,24 +16,24 @@ You can do  /opt/sonar-scanner/conf/sonar-scanner.properties while set up and wh
 
 According to the attempts that has done even if the documents (/opt/sonar-scanner/conf/sonar-scanner.properties) are not set, you can do necessary configurations with the code which is run inside the terminal.
 
-__Configurations Required for Image to Work Correctly:__
+__Configurations Required for Image to Work Correctly:__ \n
 1- Put the project you will scan into the /app folder.
 2- The run.sh file should be given appropriate commands. For example, the run.sh contents that can run JAVA and JS are as follows.
 
-__Sonar-Scanner run.sh example for JAVA project__
+__Sonar-Scanner run.sh example for JAVA project__ \n
 sonar-scanner -Dsonar.projectKey=container-java-project -Dsonar.projectVersion=2.0 -Dsonar.host.url=http://localhost:9000 -Dsonar.java.binaries=. 
 -Dsonar.login=sonarservardanalinacakcredential
 
-__Sonar-Scanner run.sh example for JAVA project__
+__Sonar-Scanner run.sh example for JAVA project__ \n
 sonar-scanner -Dsonar.projectKey=container-nj-project -Dsonar.sources=. -Dsonar.projectVersion=1.0 -Dsonar.host.url=http://localhost:9000 
 -Dsonar.login=sonarservardanalinacakcredential
 
 __After the relevant settings are made:__
 
-1-Build Dockerfile:
+1-Build Dockerfile: \n
 __docker build -t sonar-sacanner .__
 
-2-Run the created docker image.
+2-Run the created docker image. \n
 __docker container run --rm --name sonar-source -it sonar-scanner__
 
 3-You can see the results from the SonarServer you have installed.
